@@ -11,11 +11,12 @@ jobs:
       run: yarn
     - working-directory: gb-studio
       run: npm run make:cli 
+    #- working-directory: gb-studio
+    #  run: yarn link
+    #- name: Make executeable
+    #  run: chmod +x ./gb-studio-cli 
     - working-directory: gb-studio
-      run: yarn link
-    - name: Make executeable
-      run: chmod +x ./gb-studio-cli 
-    - run : |
+      run : |
         gb-studio-cli -v 
      
     
