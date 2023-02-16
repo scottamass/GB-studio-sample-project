@@ -15,10 +15,12 @@ jobs:
       run: yarn link
     #- name: Make executeable
     #  run: chmod +x ./gb-studio-cli 
-    - working-directory: game
-      run: yarn link "gb-studio"
-    
+    - uses: actions/checkout@v2
+    - run: yarn link "gb-studio"
+    - run: gb-studio-cli make:rom project.gbsproj out/game.gb
     - run : |
+        pwd
         ls
+
      
     
