@@ -13,7 +13,9 @@ jobs:
       run: npm run make:cli 
     - working-directory: gb-studio
       run: yarn link
+    - name: Make executeable
+      run: chmod +x ./gb-studio-cli 
     - run : |
-        sudo gb-studio-cli -v 
+        gb-studio-cli -v 
      
     
