@@ -15,6 +15,7 @@ jobs:
       run: yarn link
     #- name: Make executeable
     #  run: chmod +x ./gb-studio-cli 
+    - run: yarn link "gb-studio"
     - working-directory: gb-studio
       run : |
         ls
