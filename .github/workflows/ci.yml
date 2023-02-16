@@ -8,15 +8,24 @@ jobs:
     - run: ls
     - run: git clone https://github.com/chrismaltby/gb-studio.git
     - working-directory: gb-studio
-      run: yarn
+      run: |
+        ls
+        yarn
+        pwd
     - working-directory: gb-studio
-      run: npm run make:cli 
+      run: |
+        npm run make:cli
+        ls 
+        pwd
     - working-directory: gb-studio
       run: yarn link
     #- name: Make executeable
     #  run: chmod +x ./gb-studio-cli 
     - uses: actions/checkout@v2
-    - run: yarn link "gb-studio"
+    - run: |
+        ls
+        pwd
+        yarn link "gb-studio"
     - run: gb-studio-cli make:rom project.gbsproj out/game.gb
     - run : |
         pwd
