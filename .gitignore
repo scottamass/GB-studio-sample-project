@@ -1,2 +1,9 @@
 .build
 .DS_Store
+build/rom/game.gb
+.gitignore
+build/rom/game.ihx
+.gitignore
+build/rom/game.map
+build/rom/game.sym
+build/rom/game.noi
