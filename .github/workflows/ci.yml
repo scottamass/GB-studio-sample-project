@@ -17,6 +17,6 @@ jobs:
     #  run: chmod +x ./gb-studio-cli 
     - working-directory: gb-studio
       run : |
-        gb-studio-cli -V
+        ls
      
     
