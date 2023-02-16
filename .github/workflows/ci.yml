@@ -7,8 +7,8 @@ jobs:
     steps:
     - run: ls
     - run: git clone https://github.com/chrismaltby/gb-studio.git
-    - run: cd gb-studio
-    - run: yarn
+    - working-directory: gb-studio
+      run: ls
     - run: mkdir project
     - run: cd project
     - uses: actions/checkout@v2
