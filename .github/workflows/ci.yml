@@ -3,7 +3,7 @@ on: [push]
 jobs:
   build:
     name: build
-    runs-on: windows-latest
+    runs-on: macos-11
     steps:
     - run: ls
     - run: git clone https://github.com/chrismaltby/gb-studio.git
