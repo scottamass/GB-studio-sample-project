@@ -11,5 +11,8 @@ jobs:
       run: yarn
     - working-directory: gb-studio
       run: npm run make:cli 
-    
+    - working-directory: gb-studio
+      run: yarn link
+    - run : gb-studio-cli -v 
+     
     
