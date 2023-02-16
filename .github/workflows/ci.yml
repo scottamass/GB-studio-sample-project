@@ -13,6 +13,7 @@ jobs:
       run: npm run make:cli 
     - working-directory: gb-studio
       run: yarn link
-    - run : sudo gb-studio-cli -v 
+    - run : |
+        sudo gb-studio-cli -v 
      
     
