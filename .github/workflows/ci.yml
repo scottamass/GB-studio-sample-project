@@ -17,7 +17,8 @@ jobs:
         ls 
         pwd
         yarn link
-        sudo chmod 600 ~/usr/local/bin
+        cd..
+        pwd
         gb-studio-cli -v
     
       
