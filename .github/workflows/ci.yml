@@ -13,6 +13,7 @@ jobs:
         npm run make:cli
         ls 
         pwd
+        yarn link "gb-studio"
     
       
     
@@ -23,7 +24,7 @@ jobs:
     - run: |
         ls
         pwd
-        yarn link "gb-studio"
+        
     - run: gb-studio-cli -v
     - run : |
         pwd
