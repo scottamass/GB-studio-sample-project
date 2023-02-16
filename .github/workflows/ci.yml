@@ -7,7 +7,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - run: ls
-    - working-directory: ./gb-studio
+    - working-directory: gb-studio
       run: |
         git clone https://github.com/chrismaltby/gb-studio.git
         yarn
