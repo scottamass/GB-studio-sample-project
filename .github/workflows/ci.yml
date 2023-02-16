@@ -7,16 +7,14 @@ jobs:
     steps:
     - run: ls
     - run: git clone https://github.com/chrismaltby/gb-studio.git
-    
-    - run: |
-        ls
+    - working-directory: gb-studio
+      run: |
         yarn
-        pwd
-    
-    - run: |
         npm run make:cli
         ls 
         pwd
+    
+      
     
       
     #- name: Make executeable
