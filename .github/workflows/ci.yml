@@ -9,8 +9,7 @@ jobs:
     - run: git clone https://github.com/chrismaltby/gb-studio.git
     - working-directory: gb-studio
       run: yarn
-     
-    - run: mkdir project
-    - run: cd project
-    - uses: actions/checkout@v2
-    - run: ls 
+    - working-directory: gb-studio
+      run: npm run make:cli 
+    
+    
