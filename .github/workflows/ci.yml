@@ -21,7 +21,7 @@ jobs:
         ls 
         pwd
 
-    - run: chmod 077 /usr/local/bin/gb-studio-cli
+    - run: chmod 777 /usr/local/bin/gb-studio-cli
         
     - run: gb-studio-cli -V
 
