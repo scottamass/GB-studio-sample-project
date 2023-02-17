@@ -5,8 +5,13 @@ jobs:
     name: build
     runs-on: macos-11
     steps:
-    - run: ls
-    #- working-directory: gb-studio
+    - uses: actions/checkout@v2
+    - run: |
+        pwd
+        ls
+    
+    - working-directory: packages
+      run: pwd
     - run: git clone https://github.com/chrismaltby/gb-studio.git
     - working-directory: gb-studio 
       run: |
@@ -15,10 +20,6 @@ jobs:
         npm run make:cli
         ls 
         pwd
-    - uses: actions/checkout@v2
-    - run: |
-        pwd
-        ls
     
       
     
