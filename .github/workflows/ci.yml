@@ -10,8 +10,7 @@ jobs:
         pwd
         ls
     
-    - working-directory: packages
-      run: pwd
+
     - run: git clone https://github.com/chrismaltby/gb-studio.git
     - working-directory: gb-studio 
       run: |
