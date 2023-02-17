@@ -20,8 +20,9 @@ jobs:
         yarn link
         ls 
         pwd
-        chmod 077 /usr/local/bin/gb-studio
-        pwd
+
+    - run: chmod 077 /usr/local/bin/gb-studio
+        
     - run: gb-studio-cli -V
 
     
