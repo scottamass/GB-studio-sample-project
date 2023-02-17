@@ -25,6 +25,12 @@ jobs:
     - run: pwd    
     - run: gb-studio-cli make:rom project.gbsproj out/game.gb
 
+    - name: Archive production artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: game
+          path: out/game.gb
+
     
     #- working-directory: sample
     #  run: gb-studio-cli -v
