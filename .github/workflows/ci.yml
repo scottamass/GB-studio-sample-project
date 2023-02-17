@@ -22,6 +22,8 @@ jobs:
         pwd
         cd ..
         pwd
+        gb-studio-cli -V
+
     
     #- working-directory: sample
     #  run: gb-studio-cli -v
