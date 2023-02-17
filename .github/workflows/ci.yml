@@ -19,7 +19,7 @@ jobs:
         yarn link
         chmod 0777 /usr/local/bin/gb-studio-cli
      
-    -name: build the project 
+    - name: build the project 
     - run: gb-studio-cli make:rom project.gbsproj out/game.gb
 
     - name: Archive production artifacts
