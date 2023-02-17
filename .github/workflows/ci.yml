@@ -20,9 +20,11 @@ jobs:
         yarn link
         ls 
         pwd
+        cd ..
+        pwd
     
-    - working-directory: sample
-      run: gb-studio-cli -v
+    #- working-directory: sample
+    #  run: gb-studio-cli -v
       
     
       
