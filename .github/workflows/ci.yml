@@ -22,8 +22,8 @@ jobs:
         pwd
 
     - run: chmod 0777 /usr/local/bin/gb-studio-cli
-        
-    - run: gb-studio-cli -V
+    - run: pwd    
+    - run: gb-studio-cli make:rom ../project.gbsproj out/game.gb
 
     
     #- working-directory: sample
